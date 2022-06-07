@@ -3,7 +3,7 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/**
+/*
  *
  * main - prints the last digit of the random
  *
