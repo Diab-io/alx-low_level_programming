@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - prints all single digit numbers of base
@@ -12,7 +11,6 @@ int main(void)
 
 	for (a = 0; a < 10; a++)
 		printf("%d", a);
-
 	printf("\n");
 	return (0);
 }
