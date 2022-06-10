@@ -15,7 +15,6 @@ int main(void)
 
 	while (i == 0)
 	{
-
 		if (m3 < lim)
 		{
 			sum += m3;
@@ -26,8 +25,7 @@ int main(void)
 		}
 		else if (m5 % 3 == 0)
 		{																		m5 += 5;															}
-		
-		if (m3 >= lim && m5 >= lim)
+		else if (m3 >= lim && m5 >= lim)
 		{																		i = 1;
 		}
 	}
