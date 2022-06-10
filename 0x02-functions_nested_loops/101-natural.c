@@ -19,7 +19,8 @@ int main(void)
 		{
 			sum += m3;
 			m3 += 3;
-		}																	if (m5 < lim && (m5 % 3) != 0)
+		}
+		else if (m5 < lim && (m5 % 3) != 0)
 		{
 			sum += m5;																m5 += 5;
 		}
@@ -28,7 +29,7 @@ int main(void)
 		else if (m3 >= lim && m5 >= lim)
 		{																		i = 1;
 		}
-	}
+i	}
 
 printf("%d\n", sum);
 
