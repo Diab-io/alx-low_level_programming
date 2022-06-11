@@ -3,6 +3,7 @@
  * Auth: Odimayo David
  */
 
+#include <stdio.h>
 #include "main.h"
 
 /**
