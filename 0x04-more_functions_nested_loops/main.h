@@ -1,5 +1,13 @@
 #ifndef MAIN_H_
 #define MAIN_H_
+
+/*
+ * File: holberton.h
+ * Auth: Brennan D Baraban
+ * Desc: Header file containing prototypes for all functions
+ * used in the 0x03-more_functions_nested_loops directory.
+ */
+int _isupper(int c);
 int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
@@ -15,4 +23,5 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
+
 #endif
