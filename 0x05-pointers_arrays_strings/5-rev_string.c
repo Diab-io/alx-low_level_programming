@@ -22,6 +22,7 @@ int _strlen(char *s)
 
 /**
  * rev_string- prints in reverse
+ * @s: checked
  */
 void rev_string(char *s)
 {
