@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
  * main- genrate password
@@ -9,23 +10,29 @@
 
 int main(void)
 {
-	srand((unsigned int)time(NULL));
-	char pass[13];
-	int i;
+	int ascii = 2772, i = 0, j, random;
+	char password[100];
+	time_t t;
 
-	for (i = 0; i < 4; i++)
+	srand((int) time(&t));
+	while (ascii > 126)
 	{
-		pass[3 * i] = '0' + (rand() % 10);
-		char capLetter = 'A' + (rand() % 26);
-
-		pass[(3 * i) + 1] = capLetter;
-		char letter = 'a' + (rand() % 26);
-
-		pass[(3 * i) + 2] = letter;
+		random = rand() % 126;
+		password[i] = random;
+		ascii -= random;
+		i++;
 	}
-	pass[3 * i] = '\0';
-	printf("generated password : %s\n\n", pass);
+	if (ascii > 0)
+		password[i] = ascii;
+	else
+	{
+		i--;
+	}
 
-	printf("\n\n");
+
+	for (j = 0; j <= i; j++)
+	{
+		printf("%c", password[j]);
+	}
 	return (0);
 }
